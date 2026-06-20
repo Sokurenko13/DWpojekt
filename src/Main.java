@@ -24,11 +24,7 @@ public class Main {
         order.addItem(new Order.OrderItem("Klawiatura", 249.99, 1));
         order.addItem(new Order.OrderItem("Mysz", 99.99, 2));
 
-        OrderSummary summary = new OrderSummary(
-                order.getOrderNumber(),
-                order.getCustomerName(),
-                order.total()
-        );
+        OrderSummary summary = new OrderSummary(order.getOrderNumber(),order.getCustomerName(),order.total());
 
         System.out.println(summary);
 
